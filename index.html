@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <!-- Google tag (gtag.js) GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense Account Verification -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Ratio de Café de Especialidad & Cronómetro Barista</title>
+  <meta name="description" content="Calculá la proporción exacta de café molido y agua para V60, Prensa Francesa, AeroPress, Chemex y Espresso. Incluye temporizador de vertido interactivo paso a paso.">
+  <link rel="canonical" href="https://sebiglesias.com.ar/cafe-ratio/">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1c1917">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Calculadora de Ratio de Café & Cronómetro Barista | V60 y Filtrados">
+  <meta property="og:description" content="Calculá gramos de café y mililitros de agua según tu ratio favorito (1:15 a 1:18). Temporizador interactivo con tiempos de Bloom y vertido.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sebiglesias.com.ar/cafe-ratio/">
+  <meta property="og:image" content="https://sebiglesias.com.ar/cafe-ratio/icon.svg">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora Ratio Café & Cronómetro V60">
+  <meta name="twitter:description" content="Calculá agua y café con precisión barista y temporizador de extracción.">
+  <meta name="twitter:image" content="https://sebiglesias.com.ar/cafe-ratio/icon.svg">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora de Ratio de Café y Cronómetro Barista",
+    "url": "https://sebiglesias.com.ar/cafe-ratio/",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "All",
+    "description": "Herramienta barista para calcular ratios de café de especialidad y agua con cronómetro paso a paso para V60, AeroPress, Prensa Francesa y Chemex.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el ratio de café y cómo se calcula?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El ratio o proporción de café es la relación en peso entre el café molido y el agua utilizada para la extracción. Por ejemplo, un ratio 1:16 significa que se utiliza 1 gramo de café por cada 16 gramos (o mililitros) de agua. Para calcularlo, simplemente multiplica los gramos de café por el ratio (ejemplo: 18g x 16 = 288 ml de agua)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es el mejor ratio para preparar café en cafetera V60?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El estándar de oro para el método V60 es un ratio de 1:16 (15g a 18g de café para 250ml a 300ml de agua). Si prefieres una taza con mayor cuerpo e intensidad, puedes reducir el ratio a 1:15. Si buscas resaltar las notas florales y acidez brillante de un tueste claro de origen etíope o keniano, se recomienda un ratio más largo de 1:17."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el 'Bloom' o pre-infusión en el café de filtrado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El Bloom (o florecimiento) es la fase inicial donde se vierte aproximadamente el doble o triple del peso del café en agua caliente (unos 40 a 60 ml) sobre el grano recién molido durante 30 a 45 segundos. Esta pausa permite liberar el dióxido de carbono (CO2) atrapado en los granos tras el tueste, evitando sabores amargos y facilitando una extracción uniforme del agua restante."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la proporción ideal para Prensa Francesa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para prensa francesa se utiliza habitualmente un ratio de 1:12 a 1:14 (por ejemplo, 25g de café para 300ml de agua o 30g para 400ml). Al ser un método de inmersión total con filtro metálico, un ratio más corto compensa la molienda gruesa y produce una taza con cuerpo sedoso y notas achocolatadas intensas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿A qué temperatura debe estar el agua para preparar café de especialidad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La temperatura ideal del agua se sitúa entre los 90°C y los 96°C. Para tuestes claros (light roast), se recomienda agua más caliente (93°C a 96°C) para facilitar la solubilidad. Para tuestes medios u oscuros, o métodos como AeroPress, se utiliza agua entre 85°C y 90°C para no sobreextraer compuestos amargos y astringentes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tipo de molienda se necesita para cada método de extracción?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La molienda varía según el tiempo de contacto con el agua: Extra Fina para Espresso (extracción en 30s), Fina para Moka Italiana, Media-Fina para V60 y conos de goteo, Media para AeroPress, Media-Gruesa para Chemex, Gruesa para Prensa Francesa y Extra Gruesa para Cold Brew (maceración de 18 a 24 horas)."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="icon.svg" alt="Calculadora Ratio Café" class="brand-icon">
+        <div>
+          <h1 class="brand-title">Café Ratio &amp; Barista <span class="brand-badge">Timer</span></h1>
+          <a href="https://sebiglesias.com.ar" class="back-link">← sebiglesias.com.ar</a>
+        </div>
+      </div>
+      <button class="theme-toggle-btn" id="themeToggle" aria-label="Cambiar tema">☀️</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+
+      <!-- Methods Navigation Chips -->
+      <nav class="methods-nav" id="methodsNav" aria-label="Métodos de café">
+        <!-- Populated dynamically by app.js -->
+      </nav>
+
+      <!-- Calculator Grid -->
+      <div class="calc-grid">
+
+        <!-- Left Card: Bidirectional Ratio Calculator -->
+        <section class="card" aria-labelledby="calcTitle">
+          <h2 class="card-title" id="calcTitle">⚖️ Proporción Café / Agua</h2>
+
+          <!-- Coffee Input -->
+          <div class="calc-field-group">
+            <label class="calc-field-label" for="inputCoffee">
+              <span>Café Molido</span>
+              <span class="input-unit-badge">gramos (g)</span>
+            </label>
+            <div class="calc-input-row">
+              <button type="button" class="step-btn" data-target="inputCoffee" data-step="-1" aria-label="Restar 1g café">−</button>
+              <input type="number" id="inputCoffee" class="calc-input" value="18" step="0.5" min="1" max="500">
+              <button type="button" class="step-btn" data-target="inputCoffee" data-step="1" aria-label="Sumar 1g café">+</button>
+            </div>
+          </div>
+
+          <!-- Ratio Slider Box -->
+          <div class="ratio-slider-container">
+            <div class="ratio-header">
+              <span class="ratio-taste-indicator" id="ratioTasteIndicator">Equilibrado · Óptimo</span>
+              <span class="ratio-value-badge" id="ratioValueBadge">1 : 16</span>
+            </div>
+            <input type="range" class="ratio-slider" id="ratioSlider" min="13" max="18" step="0.5" value="16">
+            <div class="ratio-ticks">
+              <span>Intenso (1:13)</span>
+              <span>Equilibrado (1:16)</span>
+              <span>Delicado (1:18)</span>
+            </div>
+          </div>
+
+          <!-- Water Input (Bidirectional) -->
+          <div class="calc-field-group">
+            <label class="calc-field-label" for="inputWater">
+              <span>Agua Caliente</span>
+              <span class="input-unit-badge">mililitros (ml)</span>
+            </label>
+            <div class="calc-input-row">
+              <button type="button" class="step-btn" data-target="inputWater" data-step="-25" aria-label="Restar 25ml agua">−</button>
+              <input type="number" id="inputWater" class="calc-input" value="288" step="5" min="10" max="5000">
+              <button type="button" class="step-btn" data-target="inputWater" data-step="25" aria-label="Sumar 25ml agua">+</button>
+            </div>
+          </div>
+
+          <!-- Quick Servings Presets -->
+          <div style="margin-top: 18px;">
+            <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Porciones rápidas:</span>
+            <div class="servings-row">
+              <button class="serving-chip" data-ml="250">1 taza (250 ml)</button>
+              <button class="serving-chip" data-ml="500">2 tazas (500 ml)</button>
+              <button class="serving-chip" data-ml="750">3 tazas (750 ml)</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right Card: Interactive Brew Timer -->
+        <section class="card" aria-labelledby="timerTitle">
+          <h2 class="card-title" id="timerTitle">⏱️ Cronómetro de Vertido</h2>
+
+          <!-- Timer Clock Box -->
+          <div class="timer-hero">
+            <div class="timer-clock" id="timerClock">00:00</div>
+            <div class="timer-stage-badge" id="timerStageBadge">Bloom / Pre-infusión</div>
+            <div class="timer-instruction" id="timerInstruction">
+              Vierte 50ml de agua en círculos suaves. Deja desgasificar 45 segundos.
+            </div>
+            <div class="timer-progress-track">
+              <div class="timer-progress-bar" id="timerProgressBar"></div>
+            </div>
+          </div>
+
+          <!-- Timer Buttons -->
+          <div class="timer-controls">
+            <button class="timer-btn-primary" id="btnTimerToggle">
+              <span>▶️</span> Iniciar Vertido
+            </button>
+            <button class="timer-btn-reset" id="btnTimerReset">
+              Reiniciar
+            </button>
+          </div>
+
+          <!-- Method Technical Specs -->
+          <div class="method-specs-box">
+            <div>
+              <div class="spec-cell-label">Molienda Sugerida</div>
+              <div class="spec-cell-val" id="specGrind">Media-Fina (arena de playa)</div>
+            </div>
+            <div>
+              <div class="spec-cell-label">Temperatura Agua</div>
+              <div class="spec-cell-val" id="specTemp">92°C - 96°C</div>
+            </div>
+          </div>
+
+          <!-- Share Button -->
+          <div style="margin-top: 16px;">
+            <button class="timer-btn-reset" id="btnShareRecipe" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <span>📱</span> Compartir Receta
+            </button>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- In-Page Responsive AdSense Slot -->
+      <div class="ad-slot-container">
+        <div class="ad-disclaimer">Publicidad</div>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3381238987477190"
+             data-ad-slot="9270280155"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <!-- Static Educational & SEO Content Section -->
+      <section class="seo-section" aria-labelledby="guideTitle">
+        <h2 id="guideTitle">Guía Completa de Ratios y Métodos para Café de Especialidad</h2>
+        <p>
+          Preparar una taza excepcional de café de especialidad no es cuestión de suerte, sino de química y precisión matemática. El <strong>ratio de café</strong> (la proporción entre el peso de café molido y el volumen de agua de extracción) es la variable más crítica junto a la molienda para lograr un balance perfecto entre acidez, dulzor y cuerpo, evitando tazas amargas (sobreextraídas) o ácidas y aguadas (subextraídas).
+        </p>
+
+        <h3>Tabla de Ratios, Moliendas y Temperaturas por Cafetera</h3>
+        <p>
+          Esta guía resume las proporciones estándar recomendadas por baristas certificados de la Specialty Coffee Association (SCA):
+        </p>
+
+        <div class="seo-table-wrapper">
+          <table class="seo-table">
+            <thead>
+              <tr>
+                <th>Método de Extracción</th>
+                <th>Ratio Estándar</th>
+                <th>Rango Común</th>
+                <th>Tipo de Molienda</th>
+                <th>Temperatura Agua</th>
+                <th>Tiempo Extracción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hario V60 (Cono Filtrado)</strong></td>
+                <td><strong>1:16</strong></td>
+                <td>1:15 a 1:17</td>
+                <td>Media-Fina</td>
+                <td>92°C a 96°C</td>
+                <td>2:45 a 3:15 min</td>
+              </tr>
+              <tr>
+                <td><strong>AeroPress</strong></td>
+                <td><strong>1:13</strong></td>
+                <td>1:10 a 1:15</td>
+                <td>Media (sal fina)</td>
+                <td>85°C a 90°C</td>
+                <td>1:30 a 2:00 min</td>
+              </tr>
+              <tr>
+                <td><strong>Prensa Francesa (French Press)</strong></td>
+                <td><strong>1:12</strong></td>
+                <td>1:10 a 1:14</td>
+                <td>Gruesa (sal marina)</td>
+                <td>92°C a 95°C</td>
+                <td>4:00 min</td>
+              </tr>
+              <tr>
+                <td><strong>Chemex</strong></td>
+                <td><strong>1:15</strong></td>
+                <td>1:14 a 1:16</td>
+                <td>Media-Gruesa</td>
+                <td>94°C a 96°C</td>
+                <td>3:30 a 4:30 min</td>
+              </tr>
+              <tr>
+                <td><strong>Cold Brew (Maceración)</strong></td>
+                <td><strong>1:8</strong></td>
+                <td>1:6 a 1:10</td>
+                <td>Extra Gruesa</td>
+                <td>Agua fría / Heladera</td>
+                <td>16 a 24 horas</td>
+              </tr>
+              <tr>
+                <td><strong>Moka Italiana (Volturno / Bialetti)</strong></td>
+                <td><strong>1:10</strong></td>
+                <td>1:8 a 1:12</td>
+                <td>Fina</td>
+                <td>Agua caliente caldera</td>
+                <td>2:30 a 3:30 min</td>
+              </tr>
+              <tr>
+                <td><strong>Espresso Comercial</strong></td>
+                <td><strong>1:2</strong></td>
+                <td>1:1.5 a 1:2.5</td>
+                <td>Extra Fina</td>
+                <td>90°C a 93°C (9 bar)</td>
+                <td>25 a 30 segundos</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>¿Por qué es indispensable hacer el "Bloom" o Pre-infusión?</h3>
+        <p>
+          Cuando el café es tostado recientemente, retiene grandes cantidades de gas dióxido de carbono ($CO_2$) atrapado en las estructuras celulares del grano. Al verter el primer chorro de agua caliente, el gas escapa violentamente generando burbujas y espuma (fenómeno conocido como <em>Bloom</em> o florecimiento). Si continúas vertiendo agua sin dejar escapar ese gas, el $CO_2$ repele el agua, impidiendo que entre en contacto con los aceites esenciales del café y arruinando la claridad de la taza. Dejar reposar entre 30 y 45 segundos con el doble del peso del café en agua es el secreto para desbloquear toda la complejidad de un café de especialidad.
+        </p>
+
+        <!-- Interactive FAQ Accordion -->
+        <h3>Preguntas Frecuentes sobre Ratios y Preparación de Café</h3>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué es el ratio de café y cómo se calcula?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              El ratio o proporción de café es la relación en peso entre el café molido y el agua utilizada para la extracción. Por ejemplo, un ratio 1:16 significa que se utiliza 1 gramo de café por cada 16 gramos (o mililitros) de agua. Para calcularlo, simplemente multiplica los gramos de café por el ratio (ejemplo: 18g x 16 = 288 ml de agua).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuál es el mejor ratio para preparar café en cafetera V60?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              El estándar de oro para el método V60 es un ratio de <strong>1:16</strong> (15g a 18g de café para 250ml a 300ml de agua). Si prefieres una taza con mayor cuerpo e intensidad, puedes reducir el ratio a 1:15. Si buscas resaltar las notas florales y acidez brillante de un tueste claro de origen etíope o keniano, se recomienda un ratio más largo de 1:17.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué es el 'Bloom' o pre-infusión en el café de filtrado?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              El Bloom (o florecimiento) es la fase inicial donde se vierte aproximadamente el doble o triple del peso del café en agua caliente (unos 40 a 60 ml) sobre el grano recién molido durante 30 a 45 segundos. Esta pausa permite liberar el dióxido de carbono ($CO_2$) atrapado en los granos tras el tueste, evitando sabores amargos y facilitando una extracción uniforme del agua restante.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuál es la proporción ideal para Prensa Francesa?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              Para prensa francesa se utiliza habitualmente un ratio de <strong>1:12 a 1:14</strong> (por ejemplo, 25g de café para 300ml de agua o 30g para 400ml). Al ser un método de inmersión total con filtro metálico, un ratio más corto compensa la molienda gruesa y produce una taza con cuerpo sedoso y notas achocolatadas intensas.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿A qué temperatura debe estar el agua para preparar café de especialidad?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              La temperatura ideal del agua se sitúa entre los <strong>90°C y los 96°C</strong>. Para tuestes claros (light roast), se recomienda agua más caliente (93°C a 96°C) para facilitar la solubilidad. Para tuestes medios u oscuros, o métodos como AeroPress, se utiliza agua entre 85°C y 90°C para no sobreextraer compuestos amargos y astringentes.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué tipo de molienda se necesita para cada método?</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              La molienda varía según el tiempo de contacto con el agua: Extra Fina para Espresso (extracción en 30s), Fina para Moka Italiana, Media-Fina para V60 y conos de goteo, Media para AeroPress, Media-Gruesa para Chemex, Gruesa para Prensa Francesa y Extra Gruesa para Cold Brew (maceración de 18 a 24 horas).
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Microapps Cluster -->
+        <div class="related-cluster">
+          <div class="related-title">
+            <span>☕</span> Otras herramientas gastronómicas y sociales:
+          </div>
+          <div class="related-links-grid">
+            <a href="https://sebiglesias.com.ar/sushi-piece-counter/" class="related-app-card">
+              <span>🍣</span>
+              <div>
+                <strong>Sushi Counter</strong>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Contador all-you-can-eat</div>
+              </div>
+            </a>
+            <a href="https://sebiglesias.com.ar/asadin/" class="related-app-card">
+              <span>🥩</span>
+              <div>
+                <strong>Calculadora Asadín</strong>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Carne y carbón por persona</div>
+              </div>
+            </a>
+            <a href="https://sebiglesias.com.ar/pizzadita/" class="related-app-card">
+              <span>🍕</span>
+              <div>
+                <strong>Pizzadita</strong>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Cálculo de pizzas y empanadas</div>
+              </div>
+            </a>
+            <a href="https://sebiglesias.com.ar/picada/" class="related-app-card">
+              <span>🧀</span>
+              <div>
+                <strong>Calculadora Picada</strong>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Fiambres y quesos para previas</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Sticky Mobile Bar -->
+  <div class="sticky-mobile-bar">
+    <div class="sticky-metric">
+      <span class="sticky-label">Café / Agua</span>
+      <span class="sticky-val"><span id="stickyCoffee">18 g</span> · <span id="stickyWater">288 ml</span></span>
+    </div>
+    <div class="sticky-metric">
+      <span class="sticky-label">Ratio</span>
+      <span class="sticky-val" id="stickyRatio">1:16</span>
+    </div>
+    <button class="sticky-btn" id="stickyBtnShare">Compartir</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        Café Ratio &amp; Barista Timer · Por <a href="https://sebiglesias.com.ar" target="_blank" rel="noopener noreferrer">Sebastian Iglesias</a>
+      </p>
+      <p style="margin-top: 6px; font-size: 0.8rem; color: var(--text-muted);">
+        Herramienta de precisión para amantes del café de especialidad y baristas.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

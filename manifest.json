@@ -1,0 +1,19 @@
+{
+  "name": "Calculadora Ratio Café & Cronómetro Barista",
+  "short_name": "Café Ratio",
+  "description": "Calculadora de proporciones de café de especialidad y agua para V60, Prensa Francesa, AeroPress, Chemex y Espresso con temporizador de vertido interactivo.",
+  "start_url": "/cafe-ratio/",
+  "scope": "/cafe-ratio/",
+  "display": "standalone",
+  "background_color": "#1c1917",
+  "theme_color": "#1c1917",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
